@@ -1,0 +1,19 @@
+<?php
+
+namespace  MyApp\Controller;
+
+class Index extends \MyApp\Controller {
+
+  public function run() {
+    if (! $this->isLoggedIn()) {
+      // login
+      echo 'jump to login';
+      header('Location: ' . SITE_URL . '/login.php');
+    }
+
+    // get users info
+  }
+
+}
+
+ ?>
