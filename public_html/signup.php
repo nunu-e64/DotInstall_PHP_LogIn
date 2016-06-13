@@ -15,7 +15,7 @@ $app->run();
 <head>
   <meta charset='utf-8'>
   <title>Sign Up</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="container">

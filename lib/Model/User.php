@@ -15,7 +15,7 @@ class User extends \MyApp\Model {
   }
 
   public function login($values) {
-    $stmt = $this->db->prepare("SELECT * from users where email = :email");
+    $stmt = $this->db->prepare("select * from users where email = :email");
     $res = $stmt->execute([
       ':email' => $values['email']
     ]);
@@ -31,6 +31,12 @@ class User extends \MyApp\Model {
     }
 
     return $user;
+  }
+
+  public function findAll() {
+    $stmt = $this->db->query("select * from users order by id");
+    $stmt->setFetchMode(\PDO::FETCH_CLASS, 'stdClass');
+    return $stmt->fetchAll();
   }
 }
 

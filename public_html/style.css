@@ -12,13 +12,51 @@ form {
   text-align: center;
 }
 
-input[type=text],
-input[type=password] {
-
+form#logout {
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 12px;
 }
 
+input[type=text],
+input[type=password] {
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.btn{
+  width: 100px;
+  padding: 7px;
+  border-radius: 5px;
+  color: #fff;
+  background: #00aaff;
+  box-shadow: 0 3px0 #0088cc;
+  cursor: pointer;
+  margin: 0 auto 15px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.fs12 {
+  font-size: 12px;
+  font-weight: normal;
+}
 
 .err {
   color: #ff3300;
   font-weight: bold;
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 16px
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+ul > li {
+  padding: 3px, 0;
 }
